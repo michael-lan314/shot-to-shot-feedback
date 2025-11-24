@@ -21,4 +21,9 @@ The circuit is built for the following parts:
 ### installation
 
 # Usage
+### modular code
+While all types of feedback will have the same general structure, the error signal input, feedback logic, and output will be different for each use case. Thus the C code includes multiple input, feedback, and output modules that are called by (main).
+
 ### examples
+#### Tweezer position feedback
+#### Sideprobe frequency feedback
