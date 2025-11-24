@@ -11,19 +11,22 @@ Feedback is performed as follows: an error signal from the experiment is fed int
 ### PCB construction
 
 The PCB schematic is pictured below. The choice of resistors will depend on the desired input/output voltage ratios, using the equation: (adder equation)
-The circuit is built for the following parts:
-- AD706JNZ op amp (through-hole)
-- 90 degree SMA connector (PCB.SMAFRA.HT on Digikey)
-- 90 degree BNC connector (5227161-1 on Digikey)
+One board (which supports two output channels) requires the following parts:
+- 2x AD706JNZ dual op amp (through-hole)
+- 2x 90 degree SMA connector (PCB.SMAFRA.HT on Digikey)
+- 6x 90 degree BNC connector (5227161-1 on Digikey)
 - various resistors (through-hole)
 - 0.33 uF capacitors
 
 # Redpitaya instructions
 ### setup, packages
-
-### installation
+1. Install Red Pitaya software and connect to network ([link](https://redpitaya.readthedocs.io/en/latest/quickStart/OS_update/OS_update.html), [link](https://redpitaya.readthedocs.io/en/latest/developerGuide/software/console/ssh/ssh.html))
+2. Install project-specific Red Pitaya package: (___)
+3. Through the remote connection, copy feedback C code to desired Red Pitaya folder and compile
 
 # Usage
+question: how does it know when the error signal is being outputted? like how does RP know when a shot is over
+
 ### modular code
 While all types of feedback will have the same general structure, the error signal input, feedback logic, and output will be different for each use case. Thus the C code includes multiple input, feedback, and output modules that are called by (main).
 
