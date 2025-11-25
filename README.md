@@ -9,7 +9,7 @@ Feedback is performed as follows: an error signal from the experiment is fed int
 - 3D printed enclosure: (CAD files in repo)
 
 ### PCB construction
-An analog adder is used to add the Red Pitaya output back into the experiment. The basic schematic for one channel is shown below, where the choice of resistors will depend on the desired input/output voltage ratios.
+An analog adder (inverting adder + unity gain inverter) is used to add the Red Pitaya output back into the experiment. The basic schematic for one channel is shown below, where the choice of resistors will depend on the desired input/output voltage ratios.
 
 ![alt text](univerting_adder.png)
 
