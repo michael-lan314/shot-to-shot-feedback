@@ -18,7 +18,7 @@ One board (which supports two output channels) requires the following parts:
 - various resistors (through-hole)
 - 0.33 uF capacitors
 
-![alt text](uninverting_adder.png)
+![alt text](univerting_adder.png)
 
 # Redpitaya instructions
 ### setup, packages
