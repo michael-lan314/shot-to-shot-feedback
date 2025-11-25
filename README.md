@@ -18,6 +18,8 @@ One board (which supports two output channels) requires the following parts:
 - various resistors (through-hole)
 - 0.33 uF capacitors
 
+![alt text](uninverting_adder.png)
+
 # Redpitaya instructions
 ### setup, packages
 1. Install Red Pitaya software and connect to network ([link](https://redpitaya.readthedocs.io/en/latest/quickStart/OS_update/OS_update.html), [link](https://redpitaya.readthedocs.io/en/latest/developerGuide/software/console/ssh/ssh.html))
