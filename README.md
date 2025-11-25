@@ -9,16 +9,16 @@ Feedback is performed as follows: an error signal from the experiment is fed int
 - 3D printed enclosure: (CAD files in repo)
 
 ### PCB construction
+An analog adder is used to add the Red Pitaya output back into the experiment. The basic schematic for one channel is shown below, where the choice of resistors will depend on the desired input/output voltage ratios.
 
-The PCB schematic is pictured below. The choice of resistors will depend on the desired input/output voltage ratios, using the equation: (adder equation)
-One board (which supports two output channels) requires the following parts:
+![alt text](univerting_adder.png)
+
+The full board, with schematic and design in the repo, consists of two such channels with an added power supply and optional capacitors for stability. One board requires the following parts:
 - 2x AD706JNZ dual op amp (through-hole)
 - 2x 90 degree SMA connector (PCB.SMAFRA.HT on Digikey)
 - 6x 90 degree BNC connector (5227161-1 on Digikey)
-- various resistors (through-hole)
+- various resistors (through-hole).
 - 0.33 uF capacitors
-
-![alt text](univerting_adder.png)
 
 # Redpitaya instructions
 ### setup, packages
