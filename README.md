@@ -27,7 +27,7 @@ The full board, with schematic and design in the repo, consists of two such chan
 3. Through the remote connection, copy feedback C code to desired Red Pitaya folder and compile
 
 # Usage
-question: how does it know when the error signal is being outputted? like how does RP know when a shot is over
+set up trigger on __ channel
 
 ### modular code
 While all types of feedback will have the same general structure, the error signal input, feedback logic, and output will be different for each use case. Thus the C code includes multiple input, feedback, and output modules that are called by (main).
